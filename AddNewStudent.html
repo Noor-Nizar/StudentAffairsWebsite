@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Add new student</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul class="myNav">
+
+                <li><a href="MyHomePage.html">Home</a></li>
+                <li><a href="AddNewStudent.html">Add New Student</a></li>
+                <li><a href="ViewAllStudents.html">View All Students</a></li>
+                <li><a href="">Edit Student Data</a></li>
+                <li><a href="">Department Assignment</a></li>
+                <li><a href="StudentSearch.html">Student Search</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <!-- when the input is a number but we will not use it in any calculations so store it as a text in the db it perform better-->
+    <center>
+        <h1> New Student Form</h1>
+        <form method="post" class="new_student_form">
+            <label> Firstname </label> <br>
+            <input type="text" name="firstname" placeholder=" Firstname" size="30" required /><br><br>
+
+            <label> Lastname </label><br>
+            <input type="text" name="lastname" placeholder=" Lastname" size="30" required /><br><br>
+
+            <label> Mail </label><br>
+            <input type="email" name="email" placeholder=" example@gmail.com" size="30" required> <br><br>
+
+            <label> Phone Number </label><br>
+            <input type="text" name="phone" placeholder=" phone no." size="30" required> <br><br>
+
+            <label> ID </label><br>
+            <input type="text" name="ID" placeholder=" Student ID" size="10" required> <br><br>
+
+            <label> Gender : </label><br>
+            <input type="radio" value="Male" name="gender"> Male
+            <input type="radio" value="Female" name="gender"> Female
+            <input type="radio" value="Other" name="gender"> Other
+            <br><br>
+
+            <label>Date Of Birth</label><br>
+            <input type="date" name="date of birth" required><br><br>
+
+            <label>Level</label><br>
+            <input type="number" name="Level" placeholder=" level" min="0" max="7" required><br><br>
+
+
+            <label> GPA </label><br>
+            <input type="number" name="GPA" placeholder=" GPA" min="0" step="0.01" required><br><br>
+
+
+
+            <label> Department </label><br>
+            <input type="text" name="phone" placeholder=" if level >=3" size="20" required> <br><br>
+
+            <label> Stautus : </label><br>
+            <input type="radio" value="active" name="Status"> Active
+            <input type="radio" value="inactive" name="Status"> Inactive
+            <br><br>
+
+            <button type="submit" class="registerbtn">Add Student</button>
+        </form>
+    </center>
+</body>
+
+</html>
