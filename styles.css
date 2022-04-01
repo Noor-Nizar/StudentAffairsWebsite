@@ -1,0 +1,91 @@
+
+        *{
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body{
+            background-color: antiquewhite;
+            margin: 0;
+            padding:0;
+        }
+
+
+        .myNav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color:rgba(0, 0, 0, 0.979);
+            text-align: center;
+        }
+
+        .myNav li{
+            display: inline-block;
+            color:white;
+        }
+
+        .myNav a{
+            display: block;
+            padding: 0 20px;
+            text-decoration: none;
+            text-transform:capitalize;
+            font-size: 18px;
+            color:white;
+            line-height: 50px;
+            transition-duration: 0.3s;
+        }
+
+        .myNav a:hover{
+
+            background-color: rgb(164, 206, 206);
+            
+        }
+
+        th,td {
+            padding:10px;
+        }
+
+         input{
+            width: 250px;
+            border: none;
+            padding: 5px 0;
+            background:white;
+          }
+
+
+          input[type="email"]{
+
+            width: 250px;
+            border: none;
+            padding: 5px 0;
+            background:white;
+
+        }
+
+        input:focus {
+                background-color: rgb(4, 236, 186);
+
+          }
+
+          input[type="radio"]{
+              width:auto;
+          }
+           div {
+                   padding: 10px 0;
+                      
+          }
+          .registerbtn{
+            background-color: #4b8cc9;
+            color: white;
+            padding: 10px 10px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 250px;
+            opacity: 0.9;
+          }
+          .registerbtn:hover {
+          opacity: 1;
+          }
+        
+
