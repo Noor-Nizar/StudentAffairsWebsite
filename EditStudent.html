@@ -33,7 +33,7 @@
             <form class="search">
                 <input type="text" placeholder="Enter Student ID" name="search">
                 <br>
-                <button type="submit" class="searchbtn" style = "width: 100%;">Search</button>
+                <button type="submit" class="searchbtn" style="width: 100%;">Search</button>
             </form>
         </div>
 
@@ -57,7 +57,6 @@
             <label> Gender : </label><br>
             <input type="radio" value="Male" name="gender" checked="checked" disabled="true"> Male
             <input type="radio" value="Female" name="gender" disabled="true"> Female
-            <input type="radio" value="Other" name="gender" disabled="true"> Other
             <br><br>
 
             <label>Date Of Birth</label><br>
@@ -102,23 +101,18 @@
                 <label> Gender : </label><br>
                 <input type="radio" value="Male" name="gender"> Male
                 <input type="radio" value="Female" name="gender"> Female
-                <input type="radio" value="Other" name="gender"> Other
                 <br><br>
 
                 <label>Date Of Birth</label><br>
                 <input type="date" name="date of birth" required><br><br>
 
                 <label>Level</label><br>
-                <input type="number" name="Level" placeholder=" level" min="0" max="7" required><br><br>
+                <input type="number" name="Level" placeholder=" level" min="0" step="1" max="4" required><br><br>
 
 
                 <label> GPA </label><br>
-                <input type="number" name="GPA" placeholder=" GPA" min="0" step="0.01" required><br><br>
+                <input type="number" name="GPA" placeholder=" GPA" min="0" step="0.01" max="4" required><br><br>
 
-
-
-                <label> Department </label><br>
-                <input type="text" name="phone" placeholder=" if level >=3" size="20" required> <br><br>
 
                 <label> Status : </label><br>
                 <input type="radio" value="active" name="Status"> Active
