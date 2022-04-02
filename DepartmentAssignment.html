@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+
+        <title> Department Assignment </title>
+
+    </head>
+    
+    <body>
+        <header>
+
+            <nav>
+                <ul class="myNav">
+    
+                    <li><a href="MyHomePage.html">Home</a></li>
+                    <li><a href="AddNewStudent.html">Add New Student</a></li>
+                    <li><a href="ViewAllStudents.html">View All Students</a></li>
+                    <li><a href="EditStudent.html">Edit Student Data</a></li>
+                    <li><a href="DepartmentAssignment.html">Department Assignment</a></li>
+                    <li><a href="StudentSearch.html">Student Search</a></li>
+    
+                </ul>
+            </nav>
+    
+        </header>
+        <div class="editPageChild">
+            <p style="font-size:18px">Search for Student</p>
+            <form class="search">
+                <input type="text" placeholder="Enter Student ID" name="search">
+                <br>
+                <button type="submit" class="searchbtn" style = "width: 21%;">Search</button>
+            </form>
+        
+            <h1> Student Information</h1>
+            
+            <label> ID </label><br>
+            <input type="text" name="ID" value="20200838" size="10" disabled="true"> <br><br>
+
+            <label> Name </label> <br>
+            <input type="text" name="Name" value="Abdelrahman Hesham Ahmed Hassan" size="30" disabled="true" /><br><br>
+            
+            <label> Department </label><br>
+            <select name="pets" id="pet-select">
+                <option value="">--Please choose a Department</option>--</option>
+                <option value="internet technology">IT</option>
+                <option value="computer science">CS</option>
+                <option value="Artificial intelligence">AI</option>
+                <option value="Information Science">IS</option>
+                <option value="Decision Support">DS</option>
+                <option value="General">General</option>
+            </select><br><br>
+
+            <button type="submit" class="registerbtn">Submit</button>
+
+        </div>
+        
+    
+    </body>                
+</html>
