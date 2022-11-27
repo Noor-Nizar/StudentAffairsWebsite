@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css ' %} ">
+    <title> Department Assignment </title>
+    <script src="{% static 'JavaS.js' %}" language="JavaScript" type="text/javascript">
+    </script>
+</head>
+
+<body>
+
+    <section class="alertSection">
+        
+        <form class="editPageChild" method="POST" action=" assignRecord/{{mymember.id}}">
+            {% csrf_token %}
+            <h1> Student Information</h1>
+
+            <label> ID </label><br>
+            <input type="text" name="ID" value="{{mymember.id}}" size="10"  disabled> <br><br>
+
+            <label> Name </label> <br>
+            <input type="text" name="Name" value="{{mymember.first_name}}" disabled><br><br>
+
+            <label> Level </label> <br>
+            <input id="lvl1" type="number" name="Level" value="{{mymember.level}}" size="" min="1" max="4" disabled><br><br>
+
+            <label> Department : </label><br>
+            <input type="radio" value="internet technology" name="Department" required>IT</option>
+            <input type="radio" value="computer science" name="Department">CS</option>
+            <input type="radio" value="Artificial intelligence" name="Department">AI</option>
+            <input type="radio" value="Information Science" name="Department">IS</option>
+            <input type="radio" value="Decision Support" name="Department">DS</option>
+            <input type="radio" value="General" name="Department">General</option>
+            <br><br>
+
+            <button id="sm" onclick="return confirm('are you sure')" type="submit" class="registerbtn">Submit</button>
+
+        </form>
+
+    </section>
+
+
+</body>
+
+</html>

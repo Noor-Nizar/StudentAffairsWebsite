@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css ' %} ">
+    <title> Search for student</title>
+    <script src="{% static 'JavaS.js' %}" language="JavaScript" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul class="myNav">
+
+                <li><a href="MyHomePage.html">Home</a></li>
+                <li><a href="AddNewStudent.html">Add New Student</a></li>
+                <li><a href="ViewAllStudents.html">View All Students</a></li>
+                <li><a href="StudentSearch.html">Student Search</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <div style="text-align: center;padding:150px;">
+        <p style="font-size:18px">Search for Student</p>
+        <form class="search">
+            {% csrf_token %}
+            <input type="text" id ="sid" title="search by id " placeholder="enter student ID" name="search" required>
+
+            <button type="button"  class="searchbtn" onclick="lol()"></button>
+
+        </form>
+
+
+    </div>
+    <div id="result">
+
+    </div>
+</body>
+
+</html>

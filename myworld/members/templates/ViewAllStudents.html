@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css ' %} ">
+    <title> View All Students </title>
+    <script src="{% static 'JavaS.js' %}" language="JavaScript" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul class="myNav">
+
+                <li><a href="MyHomePage.html">Home</a></li>
+                <li><a href="AddNewStudent.html">Add New Student</a></li>
+                <li><a href="ViewAllStudents.html">View All Students</a></li>
+                <li><a href="StudentSearch.html">Student Search</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <center>
+        <div>
+            <br>
+            <Table class="students_table" , border="1" style="text-align:center;border-collapse:collapse;">
+                <tr>   
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> Mail </th>
+                    <th> Phone Number </th>
+                    <th> ID </th>
+                    <th> Gender </th>
+                    <th> Date of Birth </th>
+                    <th> Level </th>
+                    <th> Department</th>
+                    <th> GPA </th>
+                    <th> Status </th>
+                    <th colspan="3" style="color:blueviolet">Edit Student</th>
+
+                </tr>
+                {% for x in mymembers %}
+                <tr>
+                    <td>{{ x.first_name }}</td>
+                    <td>{{ x.last_name }}</td>
+                    <td>{{ x.mail}}</td> 
+                    <td>{{ x.phone}}</td>
+                    <td>{{ x.id}}</td>
+                    <td>{{ x.gender}}</td>
+                    <td>{{ x.date_of_birth}}</td>
+                    <td>{{ x.level}}</td>
+                    <td>{{ x.department}}</td>
+                    <td>{{ x.gpa}}</td>
+                    <td>{{ x.status}}</td>
+                    <td> <button style="margin:5px"  type="button" onclick="return confirm('are you sure')"><a style="text-decoration:0;color:red"  href="ViewAllStudents.html/delete/{{x.id}}"> delete</a></button></td>
+                    <td> <button style="margin:5px"  type="button"><a style="text-decoration:0" href="UpdateStudent.html/{{x.id}}">Update</a></button></td>
+                    <td> <button style="margin:5px"  type="button"><a style="text-decoration:0" href="DepartmentAssignment.html/{{x.id}}">Assign Depart</a></button></td>
+                </tr>
+                    {% endfor %} 
+                </table>
+        </div>
+    </center>
+</body>
+
+</html>
