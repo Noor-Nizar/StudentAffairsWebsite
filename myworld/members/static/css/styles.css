@@ -9,20 +9,19 @@ body {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     margin: 0;
-    padding:0;
-    color:white;
+    padding: 0;
+    color: white;
     background-color: black;
 }
 
-.NoPadding_h{
-
+.NoPadding_h {
     margin: 0;
     padding: 20px;
-    text-align: center;   
+    text-align: center;
 }
-
 
 .myNav {
     list-style-type: none;
@@ -33,7 +32,6 @@ header{
 
 .myNav li {
     display: inline-block;
-
 }
 
 .myNav a {
@@ -53,19 +51,18 @@ header{
 
 .firstHomePage div {
     display: inline-block;
-    margin:35px;
+    margin: 35px;
 }
 
-.firstHomePage a img{
-    height:250px ;
+.firstHomePage a img {
+    height: 250px;
     width: 340px;
-    border-style:groove;
+    border-style: groove;
 }
 
-.firstHomePage div h1 a:hover{
-    color:rgb(191, 20, 197);
+.firstHomePage div h1 a:hover {
+    color: rgb(191, 20, 197);
 }
-
 
 .editPageChild {
     vertical-align: text-top;
