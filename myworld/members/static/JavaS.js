@@ -59,11 +59,11 @@ function dep_pop() {
 
 function confDelete() {
     var r = confirm("Are you sure you want to delete this student?");
+    var sid = document.getElementById("SID").value;
     if (r == true) {
-        window.location.href = "RemoveStudent.py";
+        window.location.href = "ViewAllStudents.html/delete/" + sid;
         return true;
-    }
-    else
+    } else
         return false;
 }
 
