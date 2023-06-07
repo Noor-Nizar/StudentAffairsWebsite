@@ -27,7 +27,7 @@ The project contains the following main directories and files:
 - `Scripts`
 - `myworld`
 - `venvdj`
-
+.
 ## ⚙️ Application Settings
 
 The application uses Django 4.0.4 and SQLite as the database. The `DEBUG` mode is currently set to `True`.
